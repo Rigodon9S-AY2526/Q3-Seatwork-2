@@ -3,13 +3,15 @@ function seeDiscount() {
     let discounted = budget * 0.20;
 
     document.getElementById("discount").innerHTML = `
-            <button type="button" class="badge">Brands & Discounts</button>
+            <button class="btn btn-light mb-2">Brand & Discounts</button>
 
-            <div class="container2 rounded">
-                <button class="btn" type="button">Acer</button>
-                <button class="btn" type="button">Apple</button>
-                <button class="btn" type="button">Lenovo</button>
-            </div>
-    '
+                <div class="card discount-card p-4 text-center">
 
+                <h5>Recommended Brands:</h5>
+
+                    <button class="btn btn-outline-light btn-sm">Acer</button>
+                    <button class="btn btn-outline-light btn-sm">Apple</button>
+                    <button class="btn btn-outline-light btn-sm">Lenovo</button>
+
+    ' ;
 }
