@@ -11,56 +11,84 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color: #BFD2BF;">
-    <header class="navbar navbar-expand-sm">
-        <div class="container-fluid bg-dark text-white">
-            <a class="navbar-brand" style="color: #ffffff;">Lahv Tech Solutions</a>
 
-            <form class="d-flex">
-            <button class="btnn btn-secondary" type="button">PROMO</button>
-            </form>
-        </div>
-    </header>
+    <nav class="navbar navbar-dark bg-secondary px-3 fluid">
+        <span class="navbar-brand">LAHV TECH SOLUTIONS</span>
+
+        <button class="btn btn-light btn-sm">
+            PROMO
+        </button>
+    </nav>
+
 
     <main>
         <div class="container rounded">
-            <h2>Looking for a gaming laptop?</h2>
-            <p>Enter your preferred price range:</p>
-            <center><input class="form-control w-25" type="number" id="priceRange" placeholder="Price Range"></center>
+            <h2>Looking for a Gaming Laptop?</h2>
+            <p>Enter your preferred price:</p>
+            <center><input class="form-control w-25" type="number" id="priceRange" placeholder="0"></center>
         </div>
 
         <br>
-        <div class="container2">
+  
+        <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
 
-            <button type="button" class="badge">Brands & Discounts</button>
+                <button class="btn btn-light mb-2">
+                Brand & Discounts
+                </button>
 
-            <div class="container2 rounded">
-                <button class="btn" type="button">Acer</button>
-                <button class="btn" type="button">Apple</button>
-                <button class="btn" type="button">Lenovo</button>
+
+                <div class="card discount-card p-4 text-center">
+
+                    <h5>Recommended Brands:</h5>
+
+                    <button class="btn btn-outline-light btn-sm">Acer</button>
+                    <button class="btn btn-outline-light btn-sm">Apple</button>
+                    <button class="btn btn-outline-light btn-sm">Lenovo</button>
+
+                    <br><br>
+
+                    <p>Eligible Discount:</p>
+                    <button class="btn btn-danger" onclick="checkPriceRange()">0.00</button>
+                </div>
             </div>
 
-                    
-            <p>Eligible Discount:</p><button class="btn btn-secondary" type="button" onclick="checkPriceRange()">1000</button>
-            
+        <br>    
+
+            <div class="col-md-6">
+                    <br>
+                    <button class="btn btn-light mb-2">Store Location</button>
+
+                <div class="card location-card p-4">
+                    <h4 class="text-center">ViiMan Computers</h4>
+
+                    <hr>
+
+                    <p>
+                        <b>Quezon City:</b> SM North EDSA, Trinoma Mall, Gateway Mall
+                        <br><br>
+                        <b>Mandaluyong:</b> SM Megamall
+                        <br><br>
+                        <b>San Juan:</b> Mall Greenhills
+                        <br><br>
+                        <b>Taguig:</b> Market Market
+                        <br><br>
+                        <b>Makati:</b> Glorieta 2, One Ayala
+                        <br><br>
+                        <b>Pasay:</b> SM Mall of Asia
+                        <br><br>
+                        <b>Marikina:</b> SM Marikina
+                    </p>
+
+                </div>
+            </div>
+
         </div>
-
-        <button type="button" class="badge">Store Location</button>
-        <p>SM North EDSA: 5/F The Annex, Cyberzone (and VStore)
-            SM Megamall: 4/F Bldg. B, Cyberzone, Mandaluyong City
-            SM Mall of Asia: 2/F North Parking, Pasay City
-            VMall Greenhills: 3/F Food Court Area, San Juan City
-            Market! Market!: 4/F, Taguig City
-            SM Fairview: 3/F, Cyberzone, Quezon City
-            Glorieta 2: 3/F, Makati City
-            Trinoma: Level 2, Quezon City
-            One Ayala: Makati City
-            Gateway Mall: Level 2, Cubao, Quezon City
-        </p>
+        </div>
     </main>
-
-
      
-    <footer class="bg-dark text-white text-center fixed-bottom">
+    <footer class="bg-secondary text-white text-center fixed-bottom">
         <p>&copy; 2026 Lahv Tech Solutions. All rights reserved.</p>
     </footer>
     
