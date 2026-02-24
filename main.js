@@ -1,4 +1,4 @@
-function seeDiscount() {
+function seeDiscount() {}
     let budget = document.getElementById("budget").value;
     let discounted = budget * 0.20;
 
@@ -13,5 +13,4 @@ function seeDiscount() {
                     <button class="btn btn-outline-light btn-sm">Apple</button>
                     <button class="btn btn-outline-light btn-sm">Lenovo</button>
 
-    ' ;
-}
+                `;
