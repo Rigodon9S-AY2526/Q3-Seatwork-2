@@ -25,7 +25,7 @@
         <div class="container rounded">
             <h2>Looking for a Gaming Laptop?</h2>
             <p>Enter your preferred price:</p>
-            <center><input class="form-control w-25" type="number" id="priceRange" placeholder="0"></center>
+            <center><input class="form-control w-25 text-center" type="number" id="priceRange" placeholder="0"></center>
         </div>
 
         <br>
@@ -34,21 +34,9 @@
         <div class="row">
             <div class="col-md-6">
 
-                <button class="btn btn-light mb-2">Brand & Discounts</button>
-
-                <div class="card discount-card p-4 text-center">
-
-                    <h5>Recommended Brands:</h5>
-
-                    <button class="btn btn-outline-light btn-sm">Acer</button>
-                    <button class="btn btn-outline-light btn-sm">Apple</button>
-                    <button class="btn btn-outline-light btn-sm">Lenovo</button>
-
-                    <br><br>
-
-                    <p>Eligible Discount:</p>
-                    <button class="btn btn-danger" onclick="checkPriceRange()">0.00</button>
-                </div>
+                <button class="btn btn-light mb-2" onclick="seeDiscount()">Brand & Discounts</button>
+                <div id="discountDisplay"></div>
+                
             </div>
 
         <br>    
@@ -56,6 +44,7 @@
             <div class="col-md-6">
                     <br>
                     <button class="btn btn-light mb-2">Store Location</button>
+                    <div id="location"></div>
 
                 <div class="card location-card p-4">
                     <h4 class="text-center">ViiMan Computers</h4>
