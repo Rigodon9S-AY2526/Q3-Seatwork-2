@@ -14,6 +14,7 @@
     .btn {
         background-color: #9996b5;
         color: #ffffff;
+        border-color: #ffffff;
         padding: 10px 20px;
         border-radius: 5px;
         font-family: 'Comic Sans MS', sans-serif;
@@ -26,9 +27,12 @@
         color: #ffffff;
         padding: 10px 20px;
         border: none;
-        border: 9px solid #8a84b3;
         border-radius: 5px;
         cursor: pointer;
         font-family: 'Comic Sans MS', sans-serif;
         font-size: 20px;
+    }
+    
+    .badge.bg-light {
+        color: #6f6c89;
     }
